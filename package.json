@@ -4,8 +4,9 @@
   "description": "test-technique",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Jega KULATHILAGAPILLAI",
   "license": "ISC",
@@ -17,5 +18,8 @@
     "multer": "^1.4.2",
     "nodemon": "^1.19.4",
     "router-express": "^1.5.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.1"
   }
 }
