@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h1 {
+  padding: 5%;
+  text-align: center;
+  font-family: "Cinzel", serif, bold;
+  font-weight: bold;
+}
+h3 {
+  text-align: center;
+  font-family: "Cinzel", serif;
+}
+
+#inscrip {
+  padding: 2%;
+  margin-left: 30%;
+  background-color: gainsboro;
+  width: 40%;
+}
+
+#mar {
+  margin-bottom: 10rem;
+}
+
+#footer {
+  height: 10rem;
+  color: rgb(32, 17, 17);
+}
+
+.allphone-img {
+  width: 60px;
+}
+
+.menu-nav {
+  // background-color: blue;
+  box-shadow: -1px 0px 16px -1px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  .menu-nav--left {
+    padding-left: 42px;
+    a {
+      margin: 0;
+      color: #282c34;
+      font-size: 20px;
+      transition: all 0.2s ease;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+      &:hover {
+        color: #303e9f;
+        transform: translateY(-3px);
+      }
+    }
+  }
+  .menu-nav--right {
+    padding-right: 42px;
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        margin: 0 20px;
+        font-size: 16px;
+        a {
+          color: #282c34;
+          display: block;
+          text-decoration: none;
+          transition: all 0.2s ease;
+          &:hover {
+            color: #303e9f;
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.allPhone-container {
+  padding: 0 42px;
+  margin-top: 50px;
+}
+
+.allPhone--button-add {
+  button {
+    display: block;
+    margin: auto;
+  }
+}
